@@ -11,11 +11,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./design/qr-code-component-design.png)
+![](./design/recipe-page-design.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://r-yates.github.io/Recipe-page/)
+- Live Site URL: https://r-yates.github.io/Recipe-page/
 
 ### Built with
 
