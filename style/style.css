@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul { padding-left: 1.5rem; }
+
+/* UTILITIES */
+.color-tester { color: hsl(30, 10%, 34%); }
+
+.bg-main { background-color: hsl(30, 54%, 90%); }
+
+.bg-prep { background-color: hsl(330, 100%, 98%); }
+
+.bg-white { background-color: #fff;}
+
+.header-main { color: hsl(24, 5%, 18%); }
+
+.header-primary { color: hsl(14, 45%, 36%); }
+
+.header-secondary { color: hsl(332, 51%, 32%); }
+
+.fw-600 { font-weight: 600;}
+
+/* LAYOUT */
+body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+
+body strong {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 650px;
+  padding: 40px;
+  border-radius: 1rem;
+  margin: 2.5rem 0;
+}
+
+main img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+h1, h2 {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  margin: 1rem 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.35rem;
+  margin: 10px 0px;
+}
+
+p, li, table {
+  color: hsl(30, 10%, 34%);
+}
+
+hr {
+  margin: 1.7rem 0;
+  border: 0.5px solid hsl(30, 18%, 87%);
+}
+
+/* PREPARATION */
+.prep-container {
+  margin: 2rem 0 1.5rem 0;
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+
+.prep-container h3 {
+  padding-bottom: 0.5rem;
+}
+
+.prep-container ul li {
+  line-height: 1.6rem;
+}
+
+.prep-container ul li span {
+  position: relative;
+  left: 1rem;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+ol li::marker {
+  font-weight: 700;
+}
+
+/* INGREDIENTS */
+.ingredients ul li {
+  line-height: 2rem;
+}
+
+.ingredients ul li span {
+  position: relative;
+  left: 1rem;
+}
+
+/* INSTRUCTIONS */
+.instructions ol {
+  padding-left: 1.8rem;
+}
+
+.instructions ol li {
+  line-height: 1.4rem;
+  font-size: 14px;
+  margin: 0.5rem 0;
+}
+
+.instructions ol span {
+  position: relative;
+  left: 0.8rem;
+}
+
+/* NUTRITION */
+.nutrition p {
+  margin-bottom: 0.8rem;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition table,
+.nutrition table caption {
+  text-align: left;
+}
+
+.nutrition table tbody {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.nutrition table tbody tr {
+  text-indent: 1rem;
+}
+
+.nutrition table tbody tr:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition table tbody th {
+  padding: 0.8rem;
+  font-weight: 400;
+}
+.nutrition table tbody td {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+/* IMPORTED */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 428px) {
+  .bg-main {
+    background-color: #fff;
+  }
+  
+  .container {
+    margin: 0;
+  }
+
+  .container img {
+    border-radius: 0;
+    /* these two make img ignore container padding */
+    min-width: calc(100% + 80px);
+    margin: -40px -20px 0 -40px;
+  }
+}
